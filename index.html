@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disparo SMS + WhatsApp</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #25d366;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #cbd5e1;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #25d366;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1ebe5d;
+      transform: translateY(-2px);
+    }
+
+    .hero-card {
+      flex: 1;
+      min-width: 300px;
+      background: #1e293b;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .hero-card h2 {
+      margin-bottom: 20px;
+      color: #25d366;
+    }
+
+    .hero-card ul {
+      list-style: none;
+    }
+
+    .hero-card li {
+      margin-bottom: 15px;
+      padding-left: 25px;
+      position: relative;
+      color: #e2e8f0;
+    }
+
+    .hero-card li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      color: #25d366;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 2.5rem;
+      color: #25d366;
+      margin-bottom: 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #25d366;
+    }
+
+    .card p {
+      color: #cbd5e1;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      text-align: center;
+      padding: 80px 20px;
+      border-radius: 20px;
+      margin: 40px auto;
+    }
+
+    .cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .cta p {
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    @media(max-width: 768px) {
+      .hero-text h1 {
+        font-size: 2.2rem;
+      }
+
+      .section-title h2,
+      .cta h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container hero">
+      <div class="hero-text">
+        <h1>Disparo de SMS que leva direto para o WhatsApp</h1>
+        <p>
+          Aumente suas vendas com mensagens automáticas, campanhas em massa e atendimento rápido pelo WhatsApp.
+        </p>
+        <a href="https://wa.me/5511974914955" class="btn">Falar no WhatsApp</a>
+      </div>
+
+      <div class="hero-card">
+        <h2>O que você recebe:</h2>
+        <ul>
+          <li>Disparo de SMS em massa</li>
+          <li>Integração automática com WhatsApp</li>
+          <li>Painel simples e rápido</li>
+          <li>Relatórios de conversão</li>
+          <li>Aplicativo completo de vendas</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Como Funciona</h2>
+        <p>Automatize sua comunicação e venda mais todos os dias.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>1. Envie SMS</h3>
+          <p>Dispare milhares de mensagens com apenas um clique.</p>
+        </div>
+
+        <div class="card">
+          <h3>2. Cliente abre o WhatsApp</h3>
+          <p>O link leva o cliente direto para conversar com sua equipe.</p>
+        </div>
+
+        <div class="card">
+          <h3>3. Feche vendas</h3>
+          <p>Atenda rapidamente e aumente sua taxa de conversão.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Recursos do Aplicativo</h2>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>CRM Integrado</h3>
+          <p>Gerencie seus clientes em um único painel.</p>
+        </div>
+
+        <div class="card">
+          <h3>Campanhas Inteligentes</h3>
+          <p>Automatize mensagens e acompanhe resultados.</p>
+        </div>
+
+        <div class="card">
+          <h3>Atendimento Rápido</h3>
+          <p>Centralize conversas e agilize respostas.</p>
+        </div>
+
+        <div class="card">
+          <h3>Relatórios em Tempo Real</h3>
+          <p>Acompanhe cliques, respostas e vendas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta">
+        <h2>Pronto para aumentar suas vendas?</h2>
+        <p>Comece agora e transforme SMS em clientes no WhatsApp.</p>
+        <a href="https://wa.me/5511974914955" class="btn">Quero Começar</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 - Plataforma de Disparo SMS & WhatsApp | Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
